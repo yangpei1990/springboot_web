@@ -9,6 +9,7 @@ public class HelloController {
     @RequestMapping("/boot/hello")
     public  @ResponseBody String hello(){
         String str =  "hello spring boot";
+        System.out.println("hello");
                 return str;
     }
 }
