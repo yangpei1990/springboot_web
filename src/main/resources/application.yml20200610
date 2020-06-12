@@ -4,3 +4,6 @@ server:
   servlet:
    context-path: /spring_web
 
+#配置spring boot 访问的页面文件
+#spring.mvc,view.prefix=/WEB-INF/
+#spring.mvc.view.suffix=.jsp
