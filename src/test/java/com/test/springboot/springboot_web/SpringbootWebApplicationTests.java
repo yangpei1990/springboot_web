@@ -12,6 +12,9 @@ public class SpringbootWebApplicationTests {
     @Test
     public void contextLoads() {
         System.out.println("1111111111");
+        int a = 1 + 3;
+        assert a == 4;
+        System.out.println(a);
     }
 
 }
