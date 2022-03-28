@@ -9,8 +9,9 @@ import org.springframework.stereotype.Component;
 public class LoginController {
     @Autowired
     public LoginService loginService;
-    public String login(){
-       //  Users user =  loginService.login();
+
+    public String login() {
+        //  Users user =  loginService.login();
         return "SUCCESS";
     }
 }

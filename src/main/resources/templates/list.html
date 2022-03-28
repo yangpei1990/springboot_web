@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+<p th:text="${stat == null ? '':stat.msg}" class="bg-primary">...</p>
+<br/>
+<a th:href="@{/list}">用户列表</a>
+<a th:href="@{/register}">用户注册</a>
+<table class="table table-bordered">
+    <th>用户ID</th>
+    <th>登录名</th>
+    <th>用户密码</th>
+    <th>昵称</th>
+    <th>地址</th>
+    <tr th:each="account:${accounts}">
+        <td th:text="${account.id}"></td>
+        <td th:text="${account.loginName}"></td>
+        <td th:text="${account.password}"></td>
+        <td th:text="${account.nickName}"></td>
+        <td th:text="${account.location}"></td>
+    </tr>
+</table>
+</body>
+</html>
