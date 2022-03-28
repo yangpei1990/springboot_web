@@ -11,6 +11,7 @@ public class SpringbootWebApplicationTests {
 
     @Test
     public void contextLoads() {
+        System.out.println("1111111111");
     }
 
 }
